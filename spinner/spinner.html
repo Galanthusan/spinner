@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <link href="fonts/UniNeue.css" rel="stylesheet">
+    <style>
+        body, html {
+            background-color: #000014;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            background: url('image/background.jpg') no-repeat center;
+        }
+
+        #circle_spinner svg path {
+            opacity: 0.80;
+            width: 146px;
+        }
+
+        .bg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        @keyframes spinner {
+            50% {
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="bg">
+
+
+    <div id="circle_spinner">
+        <svg xmlns="http://www.w3.rog/2000/svg" width="146" height="146" viewBox="0 0 146 146" id="circle_spinner">
+
+            <path class="path-1" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+                  stroke-miterlimit="10" fill="none" d="M73,106A33,33,0,1,1,73,40M73,106a33,33,0,0,0,33-33">
+
+                <animateTransform
+                        attributeType="xml"
+                        attributeName="transform"
+                        type="rotate"
+                        from="0  73 73"
+                        to="360 73 73"
+                        dur="3s"
+                        repeatCount="indefinite"
+                />
+            </path>
+            
+            <path class="path-2" stroke="white" stroke-width="2" fill="none"
+                  d="M73,20.48a52.53,52.53,0,0,1,29.85,95.75M73,20.48a52.52,52.52,0,0,0,0,105">
+                <animateTransform
+                        attributeType="xml"
+                        attributeName="transform"
+                        type="rotate"
+                        from="0  73 73"
+                        to="360 73 73"
+                        dur="3s"
+                        repeatCount="indefinite"
+                />
+            </path>
+
+            <path class="path-3" stroke="white" stroke-width="2" fill="none" d="M41.15,8.41A72,72,0,1,1,1,73">
+                <animateTransform
+                        attributeType="xml"
+                        attributeName="transform"
+                        type="rotate"
+                        from="0  73 73"
+                        to="360 73 73"
+                        dur="3s"
+                        repeatCount="indefinite"
+                />
+            </path>
+        </svg>
+    </div>
+</div>
+
+
+</body>
